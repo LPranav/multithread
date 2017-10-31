@@ -3,6 +3,10 @@
 #include<stdlib.h>
 #include<sched.h>
 
+///////////////////
+
+//////////////////
+
 typedef void*(*f_pointer)(void*);
 f_pointer f_arr[5];	//array of funcyion pointer
 
@@ -44,6 +48,20 @@ for(i=0;i<5;i++)
 	printf("rc[%d]= %d\n ",i,rc[i]);
 
 }
+
+
+
+int ret_attr;
+param.sched_priority=5;
+ret_attr=pthread_attr_setschedparam(&a[1],&param);
+printf("ret_arrr=%d\n",ret_attr);
+
+
+
+
+
+
+
 
 
 
